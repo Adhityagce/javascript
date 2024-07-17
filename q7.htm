@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+    <script>
+         var Amount = parseInt(window.prompt("Enter Amount:"));
+         var five=0,two=0;
+         if(Amount%500==0){
+            if(Amount==500){
+                alert("5 notes of 100");
+            }
+            if(Amount>500 && Amount<=2000){
+                Amount=Amount-500;
+                five=parseInt((Amount/500));
+                alert("5 notes of 100 &  "+five+" notes of 500");
+            }
+            if(Amount>2000){
+                Amount=Amount-500;
+                two=parseInt((Amount/2000));
+                Amount=Amount-two*2000;
+                five=parseInt((Amount/500));
+                alert("5 notes of 100 &  "+two+" notes of 2000 & "+five+" notes of 500");
+            }
+         }
+         else{
+            alert("please enter the amount multiple of 500");
+         }
+    </script>
+</head>
+<body> 
+</body>
+</html>

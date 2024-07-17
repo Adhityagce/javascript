@@ -1,0 +1,16 @@
+
+<script>
+    var x = window.prompt("Enter the string");
+    var a=window.prompt("enter num");
+    var c=0;
+    for (let index = 0; index < x.length; index++) {
+        if (x[index] == " ") {
+            c++;
+            if (a==c) {
+                x=x.substring(0,index);
+                break;
+            }
+        }
+    }
+    alert(x);
+</script>

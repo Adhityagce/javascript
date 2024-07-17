@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+    <script>
+        var array1 = [1,0,2,3,4];
+        var array2 = [3,5,6,7,8,13];
+        var len=0;
+        var len1=array1.length;
+        var len2=array2.length;
+        if(len1>len2){
+            len=len1;
+        }
+        else{
+            len=len2;
+        }
+        var b=[];
+            for(var i=0;i<len;i++){
+            b[i]=(array1[i] || 0)+(array2[i]||0);
+        }
+        
+        alert(b);
+    </script>
+</head>
+<body>
+</body>
+</html>

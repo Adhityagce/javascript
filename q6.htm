@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+    <script>
+            var dateOfBirth = prompt("Enter your date of birth:").split(" ");
+            var day = parseInt(dateOfBirth[0]);
+            var month = parseInt(dateOfBirth[1]) - 1; 
+            var year = parseInt(dateOfBirth[2]);
+            var birthDate = new Date(year, month, day);
+            var today = new Date();
+            var ageYears = today.getFullYear() - birthDate.getFullYear();
+            var ageMonths = today.getMonth() - birthDate.getMonth();
+            var ageDays = today.getDate() - birthDate.getDate();
+             alert(ageYears+" years "+ageMonths+" months "+ageDays+" days");
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+</body>
+</html>

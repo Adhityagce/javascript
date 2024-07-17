@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+    <script>
+        var number = window.prompt("Enter number:");
+        var n3="";
+        if(number.length==4){
+            for(var i=0;i<4;i++){
+                 var n1=parseInt(number[i]);
+                 var n2=(n1+2)%10;
+                  n3=n3+n2;
+            }
+            alert(n3);
+        }
+        else{
+            alert("enter 4 digit number");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

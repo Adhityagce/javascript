@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <script>
+        var amount = window.prompt("Enter the Amount");
+        var hun = 0, fif = 0, ten = 0;
+        if(amount%10==0){
+            if (amount >= 100) {
+            hun = parseInt((amount / 100));
+            amount = amount - hun * 100;
+        }
+        if (amount >= 50) {
+            fif = parseInt((amount / 50));
+            amount = amount - fif * 50;
+        }
+        if (amount >= 10) {
+            ten = parseInt((amount / 10));
+            amount = amount - ten * 10;
+        }
+        alert("10's:"+ten + " "+"50's:"+ + fif + " "+"100's:"+ + hun);
+        }
+        else{
+            alert("Give Valid Input For Denomination Of 10's 50's 100's");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+
+</html>

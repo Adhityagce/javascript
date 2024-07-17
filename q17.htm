@@ -1,0 +1,53 @@
+
+<html>
+<head>
+    </head>
+    <body>
+        <center>
+            <form>
+                <h1>UNIQUE ELEMENTS</h1>
+                <table>
+                    <tr>
+                        <td>Enter a Number:</td>
+                        <td> <input type="text" id="we"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" onclick="unique()" id="q" value="enter"></td>
+                    </tr>
+                    <tr>
+                        <td>ANSWER:</td>
+                        <td><input type="text" id="o"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+        <script>
+            function unique()
+            {
+                var s=new Array();
+                var k=new Array();
+                var n=document.getElementById("we").value;
+                var c=0;
+                for(var i=0;i<n;i++)
+                {
+                    s[i]=parseInt(window.prompt("enter the value"+(i+1)));
+                }
+                for(var i=0;i<n;i++)
+                {
+                    if(i==0)
+                    k.push(s[i]);
+                    for(j=0;j<k.length;j++)
+                    {
+                       if(s[i]==k[j])
+                       c++;
+                    }
+                    if(c==0)
+                    k.push(s[i]);
+                c=0;
+                }
+                document.getElementById("o").value=k;
+                }
+        </script>
+    </body>
+</html>

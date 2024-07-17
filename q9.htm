@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <script>
+        function prime(){
+            var c=parseInt(document.getElementById("a").value);
+            var flag=0;
+        if(c>0){
+        for(var j=2;j<=c;j++){
+            flag=0;
+            for(var i=2;i<j;i++)
+            {
+                if(j%i==0){
+                    flag=1;
+                }
+            }
+            if(flag==0){
+                document.write(j+"<br>");
+            }
+           
+        }
+    }
+
+    else{
+        alert("invalid input");
+    }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form style="display: flex;justify-content: center;align-items: center;min-height: 100vh;">
+            ENTER NO: <input type="text" id="a">
+            <input type="button" value="print prime" onclick="prime()">
+        </form>
+    </div>
+</body>
+</html>

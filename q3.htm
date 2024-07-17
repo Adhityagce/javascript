@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script>
+        var Choi_Sung_Age = parseInt(window.prompt("Enter The Choi Sung Age:"));
+        var Moui_Sung_Age = parseInt(window.prompt("Enter The Moui Sung Age:"));
+        var Bhoi_Sung_Age = parseInt(window.prompt("Enter The Bhoi Sung Age:"));
+
+       if(Choi_Sung_Age>0 && Moui_Sung_Age>0 && Bhoi_Sung_Age>0){
+        if (Choi_Sung_Age === Moui_Sung_Age || Moui_Sung_Age === Bhoi_Sung_Age || Choi_Sung_Age === Bhoi_Sung_Age) {
+            alert("Ages are equal");
+        } else {
+            if (Choi_Sung_Age > Moui_Sung_Age && Choi_Sung_Age > Bhoi_Sung_Age) {
+                alert("Choi Sung");
+            } else if (Moui_Sung_Age > Choi_Sung_Age && Moui_Sung_Age > Bhoi_Sung_Age) {
+                alert("Moui Sung");
+            } else {
+                alert("Bhoi Sung");
+            }
+        }
+       }else{
+        alert("Enter Valid Age");
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

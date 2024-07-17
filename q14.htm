@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+    <script>
+       
+        function primeOnetoN() {
+            var a = parseInt(document.getElementById("in2").value);
+            var n=new Array();
+            var c=0,p=0,g=0;
+            for (var i = 0; i < a; i++) {
+                n[i] = window.prompt("enter");
+            }
+            for( i=0;i<a;i++)
+            {
+                for(j=0;j<a;j++)
+            {
+                if(n[i]==n[j]){
+                        c=c+1;
+                }
+            }
+            if(c>p)
+            {
+                p=c;
+                h=n[i];
+            }
+            c=0;
+            }
+            document.getElementById('out2').value = h;   
+        }
+    </script>
+</head>
+
+<body>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in2" placeholder="Number">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out2" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Proceed" onclick="primeOnetoN()">
+            </div>
+        </form>
+</body>
+
+</html>

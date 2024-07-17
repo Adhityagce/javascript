@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 19</title>
+    <script>
+
+        var text1 = 'The quick brown fox';
+        var text2 = 'aa, bb, cc, dd, aa';
+    
+        var word1 = 'fox';
+        var word2 = 'aa';
+        
+    
+        var count1 = countOccurrences(text1, word1);
+        var count2 = countOccurrences(text2, word2);
+        function countOccurrences(text, word) {
+            var count = 0;
+            var index = text.indexOf(word); 
+
+            while (index !== -1) {
+                count++;
+                index = text.indexOf(word, index + 1); 
+            }
+
+            return count;
+        }
+
+   
+
+        alert("'" + word1 + "' was found " + count1 + " times.");
+        alert("'" + word2 + "' was found " + count2 + " times.");
+    </script>
+</head>
+<body>
+</body>
+</html>

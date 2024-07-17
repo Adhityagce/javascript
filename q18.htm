@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Colors with Positions</title>
+    <script>
+        var colors = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+        var o = ["th", "st", "nd", "rd"];
+        var position = parseInt(prompt("Enter a number (1-7) to display the corresponding color:"));
+
+        var suffix; 
+        if (position >= 1 && position <= 3) {
+            if (position === 1) {
+                suffix = "st";
+            } else if (position === 2) {
+                suffix = "nd";
+            } else if (position === 3) {
+                suffix = "rd";
+            }
+        } else {
+            suffix = "th";
+        }
+        
+        var colorIndex = position - 1;
+        var color = colors[colorIndex];
+        alert(position + suffix + " choice is " + color + ".");
+    </script>
+</head>
+<body>
+</body>
+</html>

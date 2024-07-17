@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+    <script>
+          var input = "The Quick Brown Fox";
+            var swapped = [];
+            for (var i = 0; i < input.length; i++) {
+                var char = input[i];
+                var ascii = input.charCodeAt(i);
+                if (ascii >= 65 && ascii <= 90) { 
+                    swapped.push(String.fromCharCode(ascii + 32)); 
+                } else if (ascii >= 97 && ascii <= 122) { 
+                    swapped.push(String.fromCharCode(ascii - 32));
+                } else {
+                    swapped.push(char); 
+                }
+            }
+            var output =swapped.join('');
+        alert("Input: " + input + "\nOutput: " + output);
+    </script>
+</head>
+<body>
+</body>
+</html>

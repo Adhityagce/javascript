@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script>
+        var amount=parseInt(window.prompt("Enter The Amount:"));
+        var apple=parseInt(window.prompt("Enter The Apple Cost:"));
+        var banana=parseInt(window.prompt("Enter The Banana Cost:"));
+        if(amount>0 && apple>0 && banana>0){
+        var spent=apple+banana;
+        var final=3*(amount-spent);
+        var deposited=amount-spent;
+        alert("Spent Amount: "+spent+" Final Amount: "+final+" Deposited Amount: "+deposited);
+        }
+        else{
+            alert("Enter Valid Amount");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
